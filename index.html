@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator" >
+        <div class="screen" id="screen"></div>
+        <div class="buttons-container">
+            <div class="content-clear">
+                <button class="button" id="c" onclick="clearSet()">C</button>
+            </div>
+            <div class="content-buttons" >
+                <button class="button" id="1" onclick="selectButtons(1)">1</button>
+                <button class="button" id="2" onclick="selectButtons(2)">2</button>
+                <button class="button" id="3" onclick="selectButtons(3)">3</button>    
+            </div>
+            <div class="content-buttons">
+                <button class="button" id="4" onclick="selectButtons(4)">4</button>
+                <button class="button" id="5" onclick="selectButtons(5)">5</button>
+                <button class="button" id="6" onclick="selectButtons(6)">6</button>
+            </div>
+            <div class="content-buttons">
+                <button class="button" id="7" onclick="selectButtons(7)">7</button>
+                <button class="button" id="8" onclick="selectButtons(8)">8</button>
+                <button class="button" id="9" onclick="selectButtons(9)">9</button>
+                
+            </div>
+            <div class="content-buttons">
+                <button class="button" id="point" onclick="selectButtons('.')">.</button>
+                <button class="button" id="0" onclick="selectButtons('0')">0</button>
+                <button class="button" id="result">=</button>
+            </div>
+        </div>
+        <div class="operation-buttons" >
+            <button class="subtract button" id="subtract">-</button>
+            <button class="sum button" id="sum" >+</button>
+            <button class="multiplication button" id="multiplication">*</button>
+            <button class="division button" id="division">/</button>
+        </div>
+        <!-- <script src="validation.js"></script> -->
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
